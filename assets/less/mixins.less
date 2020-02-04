@@ -1,0 +1,16 @@
+.flex(@justify:flex, @align:stretch, @wrap:nowrap) {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+    flex-wrap: @wrap;
+}
+
+.button-creator(@background, @text-color) {
+    .flex(center, center);
+    width: 36%;
+    border-radius: 14px;
+    background-color: @background;
+    color: @text-color;
+    font-size: 1.8rem;
+    padding: 3% 0;
+}

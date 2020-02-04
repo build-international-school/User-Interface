@@ -1,0 +1,85 @@
+.navigator {
+    width: 100%;
+    .flex(space-between, stretch, wrap);
+    flex-direction: column;
+    position: fixed;
+    background-color: @terciary-grey;
+    @media @desktop {
+        flex-direction: row;
+    }
+    .hamburger {
+        text-align: center;
+        padding: 2% 0;
+        font-size: 3rem;
+        cursor: pointer;
+        @media @tablet {
+            display: none;
+        }
+        @media @desktop {
+            display: none;
+        }
+    }
+    #toggle {
+        display: none;
+        &:checked + .links{
+            display: block;
+            width: 100%;
+            .flex(center, center, nowrap);
+            flex-direction: column;
+        }
+    }
+    .links {
+        width: 100%;
+        .flex(center, center, nowrap);
+        flex-direction: column;
+        display: none;
+        @media @tablet {
+            .flex(space-evenly, center, nowrap);
+            flex-direction: row;
+        }
+        @media @desktop {
+            width: 33%;
+            .flex(flex-end, center, nowrap);
+        }
+        a {
+            width: 100%;
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 2% 0;
+            color: @main-blue;
+            text-decoration: none;
+            @media @tablet {
+                padding: 1% 0;
+            }
+            @media @desktop {
+                padding: 6% 0 0;
+            }
+        } //a tag ends
+    } //.link ends
+    .logo-container {
+        display: none;
+        @media @tablet {
+            display: block;
+            padding: 1% 0;
+            flex-direction: row;
+        }
+        @media @desktop {
+            width: 33%;
+            .flex(flex-start, stretch, nowrap);
+            padding: 1% 0 1% 2%;
+        }
+        .logo-3 {
+            display: none;
+            @media @desktop {
+                display: block;
+            }
+        }
+        .logo-2 {
+            width: 28%;
+            height: 28%;
+            @media @desktop {
+                display: none;
+            }
+        }
+    } //.logo-container ends
+} //.navigator ends
