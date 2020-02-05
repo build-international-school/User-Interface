@@ -148,9 +148,9 @@
                 }
                 img {
                     width: 50%;
-                    height: auto;
+                    height: 34vh;
                     @media @tablet {
-                        height: auto;
+                        height: 48vh;
                     }
                 }
             }
@@ -164,10 +164,10 @@
                     width: 50%;
                     height: 16vh;
                     @media @tablet {
-                        height: auto;
+                        height: 24vh;
                     }
                     @media @desktop {
-                        height: auto;
+                        height: 42vh;
                     }
                 }
                 #left-img {
@@ -177,7 +177,7 @@
                 }
                 #right-img {
                     @media @desktop {
-                        border-radius: 10px 0 0 10px;
+                        border-radius: 0 10px 10px 0;
                     }
                 }
             }
@@ -209,17 +209,14 @@
             width: 100%;
             .flex(flex-start, stretch, nowrap);
             flex-direction: row;
-            @media @desktop {
-                height: 60vh;
-            }
             img {
                 width: 100%;
-                height: auto;
+                height: 32vh;
                 @media @tablet {
-                    height: auto;
+                    height: 40vh;
                 }
                 @media @desktop {
-                    height: auto;
+                    height: 40vh;
                     object-fit: cover;
                     border-radius: 10px 10px 0 0;
                 }

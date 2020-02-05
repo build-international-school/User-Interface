@@ -676,11 +676,11 @@ p {
 }
 .container .content-container .section2 .top img {
   width: 50%;
-  height: auto;
+  height: 34vh;
 }
 @media (min-width: 750px) {
   .container .content-container .section2 .top img {
-    height: auto;
+    height: 48vh;
   }
 }
 .container .content-container .section2 .bottom {
@@ -697,12 +697,12 @@ p {
 }
 @media (min-width: 750px) {
   .container .content-container .section2 .bottom img {
-    height: auto;
+    height: 24vh;
   }
 }
 @media (min-width: 1050px) {
   .container .content-container .section2 .bottom img {
-    height: auto;
+    height: 42vh;
   }
 }
 @media (min-width: 1050px) {
@@ -712,7 +712,7 @@ p {
 }
 @media (min-width: 1050px) {
   .container .content-container .section2 .bottom #right-img {
-    border-radius: 10px 0 0 10px;
+    border-radius: 0 10px 10px 0;
   }
 }
 .container .content-container .section3 {
@@ -748,23 +748,18 @@ p {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-@media (min-width: 1050px) {
-  .container .content-container .bottom-banner {
-    height: 60vh;
-  }
-}
 .container .content-container .bottom-banner img {
   width: 100%;
-  height: auto;
+  height: 32vh;
 }
 @media (min-width: 750px) {
   .container .content-container .bottom-banner img {
-    height: auto;
+    height: 40vh;
   }
 }
 @media (min-width: 1050px) {
   .container .content-container .bottom-banner img {
-    height: auto;
+    height: 40vh;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
