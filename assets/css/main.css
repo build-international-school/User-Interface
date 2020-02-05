@@ -597,7 +597,7 @@ p {
   }
   .container .header-container .button-container .btn-maker:hover {
     background-color: #011f41;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
   }
 }
@@ -732,7 +732,7 @@ p {
 @media (min-width: 1050px) {
   .container footer {
     width: 100%;
-    padding: 1% 0;
+    padding: 1% 0 2%;
   }
 }
 .container footer h3 {
@@ -750,7 +750,7 @@ p {
 }
 @media (min-width: 1050px) {
   .container footer .social-links {
-    padding: 1% 0 1%;
+    padding: 0 0 1%;
   }
 }
 .container footer .social-links .fa-github {
