@@ -353,7 +353,7 @@ p {
 .navigator .hamburger {
   color: #083b66;
   text-align: center;
-  padding: 2% 0;
+  padding: 2% 0 3%;
   font-size: 3rem;
   cursor: pointer;
 }
@@ -671,6 +671,7 @@ p {
 }
 .container .content-container .section2 .top img {
   width: 50%;
+  height: 34vh;
 }
 .container .content-container .section2 .bottom {
   width: 100%;
