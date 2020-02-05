@@ -1,21 +1,38 @@
 .container {
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
-    margin: 0 auto; 
+    margin: auto; 
+    @media @desktop {
+        margin: 0 auto;
+    }
 
     .header-container {
         width: 100%;
-        padding: 12% 0 0;
-        .flex (center, flex-start, wrap);
+        padding: 8% 0 0;
+        .flex(center, flex-start, wrap);
         flex-direction: column-reverse;
         background-image: url(../images/library.jpg);
+        background-size: cover;
+        @media @desktop {
+            padding: 2% 0;
+        }
         .h1-tablet-desktop {
             display: none;
             @media @tablet {
                 display: block;
+                font-size: @h1;
+                text-align: center;
+                padding: 0 2%;
+                color: @terciary-grey;
+                background-color: rgba(0, 0, 0, 0.6);
             }
             @media @desktop {
                 display: block;
+                font-size: @h1;
+                text-align: center;
+                padding: 8% 2% 6%;
+                color: @terciary-grey;
+                background-color: rgba(0, 0, 0, 0.8);
             }
         }
         .h1-mobile {
@@ -35,98 +52,166 @@
             width: 100%;
             .flex(center, center, wrap);
             background-color: rgba(206, 206, 206, 0.5);
+            padding: 4% 0 0;
+            @media @tablet {
+                padding: 4% 0 0;
+            }
+            @media @desktop {
+                padding: 0;
+            }
             img {
                 padding: 2% 0;
+                @media @desktop {
+                    display: none;
+                }
             }
         }
         .button-container {
             width: 100%;
             background-color: rgba(206, 206, 206, 0.5);
+            @media @desktop {
+                padding: 4% 0;
+            }
             .btn-maker {
                 margin: 6% auto 6%;
                 .button-creator(@main-blue, @terciary-grey);
+                @media @tablet {
+                    width: 28%;
+                    font-size: 2.4rem;
+                    padding: 2% 0;
+                }
+                @media @desktop {
+                    width: 18%;
+                    font-size: 2.6rem;
+                    padding: 1% 0;
+                    &:hover {
+                        background-color: @darken-main-blue;
+                        transition: .3s;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
 
-    .top-banner {
-        width: 100%;
-        .flex(flex-start, stretch, nowrap);
-        flex-direction: row;
-        display: none;
-        img {
-            width: 100%;
+    .content-container {
+        @media @desktop {
+            .flex(space-between, stretch, wrap);
+            width: 82%;
+            margin: 0 auto;
         }
-    }
+        .top-banner {
+            display: none;
+            @media @desktop {
+                display: flex;
+                width: 44%;
+                margin: 0 0 6%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        
+        .section1 {
+            @media @desktop {
+                .flex(flex-start, stretch, nowrap);
+                width: 44%;
+                flex-direction: row;
+            }
+            ul {
+                background-color: white;
+                @media @desktop {
+                    padding: 6% 0 0;
+                }
+                li {
+                    list-style-type: circle;
+                    font-size: @h2;
+                    padding: 3% 0;
+                    color: @main-blue;
+                }
+            }
+        }
+        
+        .section2 {
+            width: 100%;
+            .flex(flex-start, stretch, wrap);
+            flex-direction: row;
+            .top {
+                width: 100%;
+                .flex(flex-start, stretch, wrap);
+                flex-direction: row;
+                @media @desktop {
+                    display: none;
+                }
+                img {
+                    width: 50%;
+                }
+            }
+            .bottom{
+                width: 100%;
+                .flex(flex-start, stretch, wrap);
+                flex-direction: row;
+                img {
+                    width: 50%;
+                }
+            }
+        }
     
-    .section1 {
-        ul {
-            background-color: white;
-            li {
-                list-style-type: circle;
+        .section3 {
+            padding: 0 4%;
+            @media @tablet {
+                padding: 0 10%;
+            }
+            @media @desktop {
+                margin: 4% 0;
+            }
+            h2 {
                 font-size: @h2;
-                padding: 3% 0;
                 color: @main-blue;
+                text-align: center;
+            }
+            p {
+                font-size: 1.8rem;
+                color: @main-blue;
+                text-align: center;
+                line-height: 30px;
+                letter-spacing: 1px;
             }
         }
-    }
     
-    .section2 {
-        width: 100%;
-        .flex(flex-start, stretch, wrap);
-        flex-direction: row;
-        .top {
+        .bottom-banner {
             width: 100%;
-            .flex(flex-start, stretch, wrap);
+            .flex(flex-start, stretch, nowrap);
             flex-direction: row;
             img {
-                width: 50%;
+                width: 100%;
+                @media @desktop {
+                    height: 40vh;
+                    object-fit: cover;
+                }
             }
-        }
-        .bottom{
-            width: 100%;
-            .flex(flex-start, stretch, wrap);
-            flex-direction: row;
-            img {
-                width: 50%;
-            }
-        }
-    }
-
-    .section3 {
-        padding: 0 4%;
-        h2 {
-            font-size: @h2;
-            color: @main-blue;
-            text-align: center;
-        }
-        p {
-            font-size: 1.8rem;
-            color: @main-blue;
-            text-align: center;
-        }
-    }
-
-    .bottom-banner {
-        width: 100%;
-        .flex(flex-start, stretch, nowrap);
-        flex-direction: row;
-        img {
-            width: 100%;
         }
     }
 
     footer {
         background-color: @main-blue;
         padding: 4% 0;
+        @media @desktop {
+            width: 100%;
+            padding: 1% 0;
+        }
         h3 {
-            font-size: @h3;
+            font-size: @h2;
             text-align: center;
             color: @secondary-coral;
+            letter-spacing: 1px;
         }
         .social-links {
-            padding: 4% 0 6%;
+            padding: 2% 0 6%;
             .flex(space-around, center,nowrap);
+            @media @desktop {
+                padding: 1% 0 1%;
+            }
             .fa-github {
                 font-size: @icon;
                 color: @secondary-coral;

@@ -4,10 +4,14 @@
     flex-direction: column;
     position: fixed;
     background-color: @terciary-grey;
+    @media @tablet {
+        flex-direction: row;
+    }
     @media @desktop {
         flex-direction: row;
     }
     .hamburger {
+        color: @main-blue;
         text-align: center;
         padding: 2% 0;
         font-size: 3rem;
@@ -38,7 +42,7 @@
             flex-direction: row;
         }
         @media @desktop {
-            width: 33%;
+            width: 36%;
             .flex(flex-end, center, nowrap);
         }
         a {
@@ -49,24 +53,30 @@
             color: @main-blue;
             text-decoration: none;
             @media @tablet {
-                padding: 1% 0;
+                padding: 5% 0;
+                font-size: 2.4rem;
+                font-weight: bold;
             }
             @media @desktop {
-                padding: 6% 0 0;
+                padding: 4% 0 0;
+                font-size: 1.8rem;
+                &:hover {
+                    color: @lighten-main-blue;
+                    transition: .3s;
+                    cursor: pointer;
+                }
             }
         } //a tag ends
     } //.link ends
     .logo-container {
         display: none;
         @media @tablet {
-            display: block;
-            padding: 1% 0;
             flex-direction: row;
         }
         @media @desktop {
             width: 33%;
             .flex(flex-start, stretch, nowrap);
-            padding: 1% 0 1% 2%;
+            padding: 0 0 0 2%;
         }
         .logo-3 {
             display: none;
