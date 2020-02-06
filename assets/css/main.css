@@ -427,7 +427,7 @@ p {
     font-size: 1.8rem;
   }
   .navigator .links a:hover {
-    color: #418cc9;
+    color: #4f9fe0;
     transition: 0.3s;
     cursor: pointer;
   }
@@ -835,7 +835,7 @@ p {
   text-align: center;
   padding: 0 2%;
   color: #e0e0e0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media (min-width: 1050px) {
   .container-aboutUs .header-container .h1-container {
@@ -860,10 +860,10 @@ p {
   height: 24vh;
 }
 .container-aboutUs .section1 .member1 img {
-  width: 50%;
+  width: 48%;
 }
 .container-aboutUs .section1 .member1 .about1 {
-  width: 50%;
+  width: 52%;
   text-align: center;
   padding: 0 2%;
 }
@@ -874,6 +874,10 @@ p {
 .container-aboutUs .section1 .member1 .about1 a {
   text-decoration: none;
   color: #083b66;
+  font-size: 1.6rem;
+}
+.container-aboutUs .section1 .member1 .about1 a i {
+  padding-left: 3%;
 }
 .container-aboutUs .section1 .member2 {
   display: flex;
@@ -885,10 +889,10 @@ p {
   height: 24vh;
 }
 .container-aboutUs .section1 .member2 img {
-  width: 50%;
+  width: 48%;
 }
 .container-aboutUs .section1 .member2 .about2 {
-  width: 50%;
+  width: 52%;
   text-align: center;
   padding: 0 2%;
 }
@@ -899,6 +903,10 @@ p {
 .container-aboutUs .section1 .member2 .about2 a {
   text-decoration: none;
   color: #083b66;
+  font-size: 1.6rem;
+}
+.container-aboutUs .section1 .member2 .about2 a i {
+  padding-left: 3%;
 }
 .container-aboutUs .section1 .member3 {
   display: flex;
@@ -910,10 +918,10 @@ p {
   height: 24vh;
 }
 .container-aboutUs .section1 .member3 img {
-  width: 50%;
+  width: 48%;
 }
 .container-aboutUs .section1 .member3 .about3 {
-  width: 50%;
+  width: 52%;
   text-align: center;
   padding: 0 2%;
 }
@@ -924,6 +932,10 @@ p {
 .container-aboutUs .section1 .member3 .about3 a {
   text-decoration: none;
   color: #083b66;
+  font-size: 1.6rem;
+}
+.container-aboutUs .section1 .member3 .about3 a i {
+  padding-left: 3%;
 }
 .container-aboutUs .section1 .member4 {
   display: flex;
@@ -935,10 +947,10 @@ p {
   height: 24vh;
 }
 .container-aboutUs .section1 .member4 img {
-  width: 50%;
+  width: 48%;
 }
 .container-aboutUs .section1 .member4 .about4 {
-  width: 50%;
+  width: 52%;
   text-align: center;
   padding: 0 2%;
 }
@@ -949,6 +961,10 @@ p {
 .container-aboutUs .section1 .member4 .about4 a {
   text-decoration: none;
   color: #083b66;
+  font-size: 1.6rem;
+}
+.container-aboutUs .section1 .member4 .about4 a i {
+  padding-left: 3%;
 }
 .container-aboutUs .section1 .member5 {
   display: flex;
@@ -960,10 +976,10 @@ p {
   height: 24vh;
 }
 .container-aboutUs .section1 .member5 img {
-  width: 50%;
+  width: 48%;
 }
 .container-aboutUs .section1 .member5 .about5 {
-  width: 50%;
+  width: 52%;
   text-align: center;
   padding: 0 2%;
 }
@@ -974,4 +990,8 @@ p {
 .container-aboutUs .section1 .member5 .about5 a {
   text-decoration: none;
   color: #083b66;
+  font-size: 1.6rem;
+}
+.container-aboutUs .section1 .member5 .about5 a i {
+  padding-left: 3%;
 }
