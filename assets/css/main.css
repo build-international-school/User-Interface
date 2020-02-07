@@ -568,9 +568,9 @@ p {
   .container .header-container .button-container {
     padding: 4% 0;
   }
-  .container .header-container .button-container a {
-    text-decoration: none;
-  }
+}
+.container .header-container .button-container a {
+  text-decoration: none;
 }
 .container .header-container .button-container .btn-maker {
   margin: 6% auto 6%;
