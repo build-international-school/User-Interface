@@ -825,9 +825,14 @@ p {
   background-image: url(../images/savannaSunset.jpg);
   background-size: cover;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .header-container {
+    padding: 12% 0 0;
+  }
+}
 @media (min-width: 1050px) {
   .container-aboutUs .header-container {
-    padding: 2% 0;
+    padding: 0;
   }
 }
 .container-aboutUs .header-container .h1-container {
@@ -837,9 +842,14 @@ p {
   color: #e0e0e0;
   background-color: rgba(0, 0, 0, 0.7);
 }
+@media (min-width: 750px) {
+  .container-aboutUs .header-container .h1-container {
+    padding: 1% 22%;
+  }
+}
 @media (min-width: 1050px) {
   .container-aboutUs .header-container .h1-container {
-    padding: 2% 30%;
+    padding: 6% 20%;
   }
 }
 .container-aboutUs .section1 {
@@ -850,6 +860,24 @@ p {
   max-width: 100%;
   width: 100%;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 4% 0;
+  }
+}
 .container-aboutUs .section1 .member1 {
   display: flex;
   justify-content: space-evenly;
@@ -859,22 +887,50 @@ p {
   width: 100%;
   height: 24vh;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member1 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 .member1 {
+    width: 28%;
+    padding: 0;
+  }
+}
 .container-aboutUs .section1 .member1 img {
   width: 48%;
+}
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member1 img {
+    width: 60%;
+    height: 24vh;
+    border-radius: 8px;
+  }
 }
 .container-aboutUs .section1 .member1 .about1 {
   width: 52%;
   text-align: center;
   padding: 0 2%;
 }
-.container-aboutUs .section1 .member1 .about1 h4 {
-  font-size: 1.8rem;
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member1 .about1 {
+    width: 40%;
+    padding: 0;
+  }
+}
+.container-aboutUs .section1 .member1 .about1 h2 {
+  font-size: 2.2rem;
   color: #083b66;
 }
 .container-aboutUs .section1 .member1 .about1 a {
   text-decoration: none;
   color: #083b66;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .container-aboutUs .section1 .member1 .about1 a i {
   padding-left: 3%;
@@ -888,22 +944,44 @@ p {
   width: 100%;
   height: 24vh;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member2 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 .member2 {
+    width: 28%;
+    padding: 0;
+  }
+}
 .container-aboutUs .section1 .member2 img {
   width: 48%;
+}
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member2 img {
+    width: 60%;
+    height: 24vh;
+    border-radius: 8px;
+  }
 }
 .container-aboutUs .section1 .member2 .about2 {
   width: 52%;
   text-align: center;
   padding: 0 2%;
 }
-.container-aboutUs .section1 .member2 .about2 h4 {
-  font-size: 1.8rem;
+.container-aboutUs .section1 .member2 .about2 h2 {
+  font-size: 2.2rem;
   color: #083b66;
 }
 .container-aboutUs .section1 .member2 .about2 a {
   text-decoration: none;
   color: #083b66;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .container-aboutUs .section1 .member2 .about2 a i {
   padding-left: 3%;
@@ -917,22 +995,44 @@ p {
   width: 100%;
   height: 24vh;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member3 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 .member3 {
+    width: 28%;
+    padding: 0;
+  }
+}
 .container-aboutUs .section1 .member3 img {
   width: 48%;
+}
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member3 img {
+    width: 60%;
+    height: 24vh;
+    border-radius: 8px;
+  }
 }
 .container-aboutUs .section1 .member3 .about3 {
   width: 52%;
   text-align: center;
   padding: 0 2%;
 }
-.container-aboutUs .section1 .member3 .about3 h4 {
-  font-size: 1.8rem;
+.container-aboutUs .section1 .member3 .about3 h2 {
+  font-size: 2.2rem;
   color: #083b66;
 }
 .container-aboutUs .section1 .member3 .about3 a {
   text-decoration: none;
   color: #083b66;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .container-aboutUs .section1 .member3 .about3 a i {
   padding-left: 3%;
@@ -946,22 +1046,44 @@ p {
   width: 100%;
   height: 24vh;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member4 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 .member4 {
+    width: 28%;
+    padding: 2% 0;
+  }
+}
 .container-aboutUs .section1 .member4 img {
   width: 48%;
+}
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member4 img {
+    width: 60%;
+    height: 24vh;
+    border-radius: 8px;
+  }
 }
 .container-aboutUs .section1 .member4 .about4 {
   width: 52%;
   text-align: center;
   padding: 0 2%;
 }
-.container-aboutUs .section1 .member4 .about4 h4 {
-  font-size: 1.8rem;
+.container-aboutUs .section1 .member4 .about4 h2 {
+  font-size: 2.2rem;
   color: #083b66;
 }
 .container-aboutUs .section1 .member4 .about4 a {
   text-decoration: none;
   color: #083b66;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .container-aboutUs .section1 .member4 .about4 a i {
   padding-left: 3%;
@@ -975,23 +1097,60 @@ p {
   width: 100%;
   height: 24vh;
 }
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member5 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    width: 50%;
+    height: 24vh;
+  }
+}
+@media (min-width: 1050px) {
+  .container-aboutUs .section1 .member5 {
+    width: 28%;
+    padding: 2% 0;
+  }
+}
 .container-aboutUs .section1 .member5 img {
   width: 48%;
+}
+@media (min-width: 750px) {
+  .container-aboutUs .section1 .member5 img {
+    width: 60%;
+    height: 24vh;
+    border-radius: 8px;
+  }
 }
 .container-aboutUs .section1 .member5 .about5 {
   width: 52%;
   text-align: center;
   padding: 0 2%;
 }
-.container-aboutUs .section1 .member5 .about5 h4 {
-  font-size: 1.8rem;
+.container-aboutUs .section1 .member5 .about5 h2 {
+  font-size: 2.2rem;
   color: #083b66;
 }
 .container-aboutUs .section1 .member5 .about5 a {
   text-decoration: none;
   color: #083b66;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .container-aboutUs .section1 .member5 .about5 a i {
   padding-left: 3%;
+}
+.container-aboutUs footer .img-banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4% 0;
+  background-color: #e0e0e0;
+}
+@media (min-width: 1050px) {
+  .container-aboutUs footer .img-banner {
+    padding: 1%;
+  }
 }
