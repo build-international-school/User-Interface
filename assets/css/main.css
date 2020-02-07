@@ -568,6 +568,9 @@ p {
   .container .header-container .button-container {
     padding: 4% 0;
   }
+  .container .header-container .button-container a {
+    text-decoration: none;
+  }
 }
 .container .header-container .button-container .btn-maker {
   margin: 6% auto 6%;
@@ -581,6 +584,7 @@ p {
   color: #e0e0e0;
   font-size: 1.8rem;
   padding: 3% 0;
+  text-decoration: none;
 }
 @media (min-width: 750px) {
   .container .header-container .button-container .btn-maker {
