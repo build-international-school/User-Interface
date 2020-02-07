@@ -12,8 +12,11 @@
     flex-direction: column-reverse;
     background-image: url(../images/savannaSunset.jpg);
     background-size: cover;
+    @media @tablet {
+      padding: 12% 0 0;
+    }
     @media @desktop {
-      padding: 2% 0;
+      padding: 0;
     }
     .h1-container {
       font-size: @h1;
@@ -21,8 +24,11 @@
       padding: 0 2%;
       color: @terciary-grey;
       background-color: rgba(0, 0, 0, 0.7);
+      @media @tablet {
+        padding: 1% 22%;
+      }
       @media @desktop {
-        padding: 2% 30%;
+        padding: 6% 20%;
       }
     }
   }
@@ -31,26 +37,51 @@
     .flex(center, center, wrap);
     max-width: 100%;
     width: 100%;
+    @media @tablet {
+      .flex(flex-start, center, wrap);
+    }
+    @media @desktop {
+      .flex(space-evenly, center, wrap);
+      width: 90%;
+      padding: 4% 0;
+    }
     .member1 {
       .flex(space-evenly, stretch, wrap);
       flex-direction: row;
       width: 100%;
       height: @member-vh;
+      @media @tablet {
+        .flex(flex-start, stretch, nowrap);
+        width: 50%;
+      }
+      @media @desktop {
+        width: 28%;
+        padding: 0;
+      }
       img {
         width: 48%;
+        @media @tablet {
+          width: 60%;
+          height: 24vh;
+          border-radius: 8px;
+        }
       }
       .about1 {
         width: 52%;
         text-align: center;
         padding: 0 2%;
-        h4 {
-          font-size: @h3;
+        @media @tablet {
+          width: 40%;
+          padding: 0;
+        }
+        h2 {
+          font-size: @h2;
           color: @main-blue;
         }
         a {
           text-decoration: none;
           color: @main-blue;
-          font-size: 1.6rem;
+          font-size: @h3;
           i {
             padding-left: 3%;
           }
@@ -62,21 +93,34 @@
       flex-direction: row;
       width: 100%;
       height: @member-vh;
+      @media @tablet {
+        .flex(flex-start, stretch, nowrap);
+        width: 50%;
+      }
+      @media @desktop {
+        width: 28%;
+        padding: 0;
+      }
       img {
         width: 48%;
+        @media @tablet {
+          width: 60%;
+          height: 24vh;
+          border-radius: 8px;
+        }
       }
       .about2 {
         width: 52%;
         text-align: center;
         padding: 0 2%;
-        h4 {
-          font-size: @h3;
+        h2 {
+          font-size: @h2;
           color: @main-blue;
         }
         a {
           text-decoration: none;
           color: @main-blue;
-          font-size: 1.6rem;
+          font-size: @h3;
           i {
             padding-left: 3%;
           }
@@ -88,21 +132,34 @@
       flex-direction: row;
       width: 100%;
       height: @member-vh;
+      @media @tablet {
+        .flex(flex-start, stretch, nowrap);
+        width: 50%;
+      }
+      @media @desktop {
+        width: 28%;
+        padding: 0;
+      }
       img {
         width: 48%;
+        @media @tablet {
+          width: 60%;
+          height: 24vh;
+          border-radius: 8px;
+        }
       }
       .about3 {
         width: 52%;
         text-align: center;
         padding: 0 2%;
-        h4 {
-          font-size: @h3;
+        h2 {
+          font-size: @h2;
           color: @main-blue;
         }
         a {
           text-decoration: none;
           color: @main-blue;
-          font-size: 1.6rem;
+          font-size: @h3;
           i {
             padding-left: 3%;
           }
@@ -114,21 +171,34 @@
       flex-direction: row;
       width: 100%;
       height: @member-vh;
+      @media @tablet {
+        .flex(flex-start, stretch, nowrap);
+        width: 50%;
+      }
+      @media @desktop {
+        width: 28%;
+        padding: 2% 0;
+      }
       img {
         width: 48%;
+        @media @tablet {
+          width: 60%;
+          height: 24vh;
+          border-radius: 8px;
+        }
       }
       .about4 {
         width: 52%;
         text-align: center;
         padding: 0 2%;
-        h4 {
-          font-size: @h3;
+        h2 {
+          font-size: @h2;
           color: @main-blue;
         }
         a {
           text-decoration: none;
           color: @main-blue;
-          font-size: 1.6rem;
+          font-size: @h3;
           i {
             padding-left: 3%;
           }
@@ -140,25 +210,50 @@
       flex-direction: row;
       width: 100%;
       height: @member-vh;
+      @media @tablet {
+        .flex(flex-start, stretch, nowrap);
+        width: 50%;
+        height: 24vh;
+      }
+      @media @desktop {
+        width: 28%;
+        padding: 2% 0;
+      }
       img {
         width: 48%;
+        @media @tablet {
+          width: 60%;
+          height: 24vh;
+          border-radius: 8px;
+        }
       }
       .about5 {
         width: 52%;
         text-align: center;
         padding: 0 2%;
-        h4 {
-          font-size: @h3;
+        h2 {
+          font-size: @h2;
           color: @main-blue;
         }
         a {
           text-decoration: none;
           color: @main-blue;
-          font-size: 1.6rem;
+          font-size: @h3;
           i {
             padding-left: 3%;
           }
         }
+      }
+    }
+  }
+  footer {
+    .img-banner {
+      .flex(center, center, nowrap);
+      width: 100%;
+      padding: 4% 0;
+      background-color: @terciary-grey;
+      @media @desktop {
+        padding: 1%;
       }
     }
   }
